@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="TesoLine"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#003366"
+            android:layout_marginBottom="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="ACCESO | LOGIN"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Campo Usuario -->
+        <EditText
+            android:id="@+id/etUsuario"
+            android:hint="Nombre de usuario"
+            android:drawableLeft="@android:drawable/ic_menu_myplaces"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Campo Contraseña -->
+        <EditText
+            android:id="@+id/etContrasena"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+            android:layout_marginBottom="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Botón Entrar -->
+        <Button
+            android:id="@+id/btnEntrar"
+            android:text="Entrar"
+            android:backgroundTint="#8E44AD"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Botón Crear Cuenta -->
+        <Button
+            android:id="@+id/btnCrearCuenta"
+            android:text="Crear cuenta"
+            android:backgroundTint="#9B59B6"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
